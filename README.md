@@ -16,7 +16,7 @@
 
 Написала след-ий скрипт:
 
-#!/bin/bash
+```#!/bin/bash
 
 if [ "$1" -eq 1 ]; then
     echo "Timakhova Natalia Mikhailovna"
@@ -25,6 +25,7 @@ elif [ "$1" -eq 2 ]; then
 else
     echo "Неверный параметр"
 fi
+```
 
 В конец файла /etc/zabbix/zabbix_agentd.conf добавила UserParameter=custom.script[*],/usr/local/bin/zabbix_custom_script.sh $1
 
